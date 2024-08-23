@@ -30,3 +30,11 @@
 - Aspas duplas    -> `\"`
 - Aspa simples    -> `\'`
 - Contrabarra     -> `\\`
+
+## Precisão em Operações com Números de Ponto Flutuante
+
+Em C, assim como em outras linguagens de programação, operações com números de ponto flutuante (decimais) podem ser imprecisas devido à forma como esses números são representados na memória. Isso pode levar a erros de arredondamento e outras imprecisões. 
+
+Isso acontece porque os números de ponto flutuante são representados de forma aproximada na memória do computador, seguindo o padrão IEEE 754, o que pode levar a erros de arredondamento. 
+
+Uma abordagem comum para evitar esses problemas é trabalhar com números inteiros e, em seguida, converter para decimais apenas quando necessário. Por exemplo, você pode armazenar valores em centavos (inteiros) e depois dividir por 100.00 para obter o valor em reais.
